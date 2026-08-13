@@ -24,7 +24,8 @@ ALLOWED_ORIGINS = [
     "https://educaceara.infinityfreeapp.com",
     "https://projeto2.fwh.is",
     "http://127.0.0.1:5500",
-    "http://localhost:5500"
+    "http://localhost:5500",
+    "https://exemplo.infinityfree.me"
 ]
 
 app.add_middleware(
