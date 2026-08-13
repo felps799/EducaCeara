@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--FONTE-->
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--BOOTSTRAP-->
+    <link rel="icon" href="https://i.postimg.cc/1Xh6fG81/Favicon-EC.png">
+    <title>Educação Financeira</title>
+    <link rel="stylesheet" href="aulas-geral.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://i.postimg.cc/gkcyRKMG/Logo-EC-2.png" alt="" width="250px">
+            </a>
+        </div>
+
+        <div class="menu-mobile-btn" onclick="toggleMenu()">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#sobre">Sobre nós</a></li>
+                <li><a href="educaceara.html">Educa Ceará</a></li>
+                <li><a href="bot.html">ChatBot Ciro</a></li>
+            </ul>
+        </nav>
+
+        <div class="btns">
+            <button class="faleconosco">
+                <a href="index.html#suporte">Fale Conosco</a>
+            </button>
+        </div>
+
+        <!-- Menu mobile -->
+        <nav class="menu-mobile" id="menu-mobile">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#sobre">Sobre nós</a></li>
+                <li><a href="educaceara.html">Educa Ceará</a></li>
+                <li><a href="bot.html">ChatBot Ciro</a></li>
+                <li><a href="index.html#suporte">Fale Conosco</a><li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="interface">
+        <div class="header">
+            <div class="voltar">
+                <a href="educaceara.html">
+                    <i class="bi bi-arrow-left-circle-fill"></i>
+                </a>
+            </div>
+
+            <div class="banner">
+                <a href="educaceara.html">
+                    <img src="https://i.postimg.cc/x1vg4Pvx/financeira.jpg" alt="" width="1297px">
+                </a>
+            </div>
+        </div>
+
+        <div class="aulas">
+            <div class="card-aulas">
+                <h1 class="titulo">Educação Financeira</h1>
+
+                <div class="list">
+                    <a href="https://www.teses.usp.br/teses/disponiveis/107/107131/tde-01082022-161934/publico/GabrielaOLealCorrigida.pdf" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Educação Financeira no Brasil</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-book-half"></i>
+                                    <p>Leitura</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://educapes.capes.gov.br/bitstream/capes/597749/2/Guia%20B%c3%a1sico%20de%20Finan%c3%a7as%20Pessoais.pdf" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Finanças Pessoais</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-book-half"></i>
+                                    <p>Leitura</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                      <a href="https://youtu.be/VOhzsdM25P0?si=uKMdHA8JQWGPFrs5" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Controle Financeiro</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>02:02</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://youtu.be/I03p9nWVkOg?si=KJBM3zDzDPucb5WC" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Orçamento Familiar</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>24:57</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                        
+                    <a href="https://youtu.be/V2ryVtfPBeE?si=MRoNfLUM8f-5EMWg" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p class="listasuspensa">Despesas</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>09:00</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.bcb.gov.br/content/cidadaniafinanceira/documentos_cidadania/Cuidando_do_seu_dinheiro_Gestao_de_Financas_Pessoais/caderno_cidadania_financeira.pdf?utm_source=chatgpt.com" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Guia Financeiro</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-book-half"></i>
+                                    <p>Leitura</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/FQEaSfvYZUE?si=8pTlGC1UU-5fqA7w" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Fundo de Emegência</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>03:21</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://youtu.be/A8DOAoFu06A?si=tP3ImTX3vgh6TdMQ" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Consumo Consciente</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>24:16</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.caixa.gov.br/Downloads/educacao-financeira-cartilhas/CARTILHA5_CREDITO.pdf" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Crédito</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-book-half"></i>
+                                    <p>Leitura</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/F1R_9DCyvYI?si=VGiiK3_09kfoIl8-" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Cartão de Crédito</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>14:35</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/vEUEjlNuWlw?si=SGkXF_VLusWnAX8i" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Superendividamento</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>58:36</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/6Sx4guiBuAc?si=uH1CMhW9aTHuq3vq" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Juros, Inflação e Rentabilidade</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>01:08:38</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/LR6O2RdTbSc?si=XnwEhjlNzbT8ZmdM" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Renda Fixa e Variável</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>03:57</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://midias.segurosunimed.com.br/content/Cartilha-Educacao-Financeira-e-Previdenciaria-Prev.Aberta_-11082023.pdf" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Investimentos</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-book-half"></i>
+                                    <p>Leitura</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/Vi7sSRi_3ao?si=lBEfpXnRiooz3zmr" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Planejamento Financeiro</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>14:09</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/vY3iUzG7vak?si=ax4X7-dUIYtlcoft" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Imposto de Renda</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>05:48</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/e1gnyBq5YpQ?si=CaNXepOpQhT1Fpdw" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Previdência Social</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>06:05</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="avatar">
+                <img src="https://i.postimg.cc/k4MftCFC/Avatar-Financeiro.png" alt="" width="500px" ali>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="interface-foot">
+            <div class="cima">
+                <a href="#home">
+                    <img src="https://i.postimg.cc/zvmxwC1z/Logo-Footer.png" alt="" width="200px">
+                </a>
+
+                <div class="sociais">
+                    <button>
+                        <a href="https://wa.me/5588997830094?text=Vim%20pelo%20EducaCear%C3%A1">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </button>
+
+                    <button>
+                        <a href="https://www.instagram.com/educaceara2025/?utm_source=ig_web_button_share_sheet">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="linha"></div>
+
+            <div class="baixo">
+                <p>
+                    <i class="bi bi-envelope-fill"></i> <a href="mailto:luis.felipecosta12061984@gmail.com">luis.felipecosta12061984@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

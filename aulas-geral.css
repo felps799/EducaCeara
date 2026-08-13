@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", arial;
+}
+
+html{
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f5fefd;
+    padding-top: 100px; 
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/*ESTILO DO CABEÇALHO*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    background-color: #F0F8F5;
+    position: fixed;   /* fixa no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;     /* fica acima do conteúdo */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* sombra opcional */
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 450;
+    font-size: 17px;
+    position: relative;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #049D46;
+    color: #049D46;
+    border-radius: 0px;
+    padding: 1px 10px;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btns button {
+    padding: 10px 30px;
+    background-color: transparent;
+    outline: none;
+}
+
+.btns button.faleconosco {
+    background-color: #049D46;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.btns button.faleconosco a {
+    display: flex;
+    text-decoration: none;
+    font-size: 16.5px;
+    color: #fff;
+    font-weight: 600;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.btns button.faleconosco:hover {
+    box-shadow: 0 0 6px #049D46;
+    transform: scale(1.02);
+    color: #fff;
+}
+
+/*ESTILO DO CABEÇALHO*/
+
+/*ESTILO DAS AULAS*/
+
+.interface {
+    padding: 30px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header .voltar i {
+    font-size: 26px;
+    color: #049D46;
+}
+
+.header .banner img {
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1300px;
+    height: auto;
+}
+
+.interface .aulas {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.card-aulas {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.card-aulas h1.titulo {
+    margin-left: 13px;
+}
+
+.card-aulas .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 7px;
+}
+
+.card-aulas .list a {
+    display: flex;
+    text-decoration: none;
+    background-color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 1px 1px rgb(223, 223, 223);
+
+}
+
+.card-aulas a .line {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-aulas a .line .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-aulas a .line .left i {
+    font-size: 6px;
+    color: #049D46;
+}
+
+.card-aulas a .line .left p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #292929;
+}
+
+.card-aulas a .line .rigth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-aulas a .line .rigth .tempo {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #adffd0;
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.card-aulas a .line .rigth .tempo i {
+    color: #049D46;
+}
+
+.card-aulas a .line .rigth .tempo p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #049D46;
+}
+
+.card-aulas a .line .rigth i#seta{
+    font-size: 24px;
+    color: #049D46;
+}
+
+.card-aulas a .line .rigth i#arrow {
+    font-size: 24px;
+    color: #049D46;
+}
+
+.card-aulas a .line .rigth i#livro{
+    font-size: 22px;
+    color: #049D46;
+}
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.dropdown-list {
+    display: none;
+    flex-direction: column;
+    margin-left: 30px; 
+    gap: 8px;
+    margin-top: 3px;
+}
+
+.dropdown-list a {
+    background-color: #eafdf3;
+    padding: 8px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #049D46;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.dropdown-list a:hover {
+    background-color: #c7f5db;
+}
+
+.dropdown-list a .line .left p {
+    font-size: 15px;
+    color: #049D46;
+    font-weight: 500;
+}
+
+/*ESTILO DAS AULAS*/
+
+/*ESTILO DO FOOTER*/
+
+footer {
+    padding: 40px 10%;
+    background-color: #049D46;
+    box-shadow: 0 2px 10px #000;
+}
+
+footer .interface-foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .interface-foot .cima {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .interface-foot .cima .sociais {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+}
+
+footer .interface-foot .cima .sociais button {
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #e4d000;
+}
+
+footer .interface-foot .cima .sociais button i {
+    font-size: 23px;
+    color: #049D46;
+}
+
+.linha {
+    border: solid 2px #e4d000;
+}
+
+footer .interface-foot .baixo p {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+}
+
+footer .interface-foot .baixo p i {
+    font-size: 20px;
+    color: #e4d000;
+}
+
+footer .interface-foot .baixo p a {
+    color: #e4d000;
+    text-decoration: none;
+}
+
+/*ESTILO DO FOOTER*/
+
+/* ANIMAÇÂO HOVER DISCIPLINAS */
+
+.aulas .card-aulas .list a .line{
+    width: 100%;
+    background-color: #f5f5f5;
+    transition: all 0.3s ease;
+    padding: 3px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(0,0,0,0);
+}
+
+.aulas .card-aulas .list a .line:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    background-color: #e0f0ff
+}
+
+/* ANIMAÇÂO HOVER DISCIPLINAS */
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 1222px){
+    header nav ul {
+        gap: 15px;
+    }
+
+    section.home .interface .left .btns-home button {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1020px){
+    .interface {
+        padding: 20px 5%;
+    }
+
+    .interface .aulas {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .card-aulas {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card-aulas h1.titulo {
+        text-align: center;
+        margin: 0;
+    }
+
+    .avatar img {
+        max-width: 380px;
+        margin-left: 40px;
+    }
+
+    footer .interface-foot .cima {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    footer .interface-foot .baixo p {
+        justify-content: center;
+        text-align: center;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+
+    .header .banner img {
+        border-radius: 12px;
+    }
+
+    .card-aulas h1.titulo {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .card-aulas .list a .line .left p {
+        font-size: 15px;
+    }
+
+    .card-aulas .list a .line .rigth .tempo p {
+        font-size: 14px;
+    }
+
+    .avatar img {
+        max-width: 280px;
+    }
+}
+
+/*RESPONSIVIDADE*/
+
+/* Botão hambúrguer */
+.menu-mobile-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #049D46;
+}
+
+/* Menu mobile (oculto por padrão) */
+.menu-mobile {
+    display: none;
+    position: absolute;
+    top: 70px; /* altura do header */
+    right: 20px;
+    background-color: #fff;
+    border: 2px solid #049D46;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 2000;
+}
+
+.menu-mobile ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-mobile ul li a {
+    text-decoration: none;
+    color: #049D46;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu-mobile ul li a:hover {
+    color: #000;
+}
+
+/* Mostrar botão hambúrguer no mobile */
+@media screen and (max-width: 1020px) {
+    .menu-desktop, .btns {
+        display: none;
+    }
+    .menu-mobile-btn {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #049D46;
+        margin-left: auto;
+    }
+}

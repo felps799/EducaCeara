@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", arial;
+}
+
+html{
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f5fefd;
+    padding-top: 100px; 
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/*ESTILO DO CABEÇALHO*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    background-color: #F0F8F5;
+    position: fixed;   /* fixa no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;     /* fica acima do conteúdo */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* sombra opcional */
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 450;
+    font-size: 17px;
+    position: relative;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #049D46;
+    color: #049D46;
+    border-radius: 0px;
+    padding: 1px 10px;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btns button {
+    padding: 10px 30px;
+    background-color: transparent;
+    outline: none;
+}
+
+.btns button.faleconosco {
+    background-color: #049D46;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.btns button.faleconosco a {
+    display: flex;
+    text-decoration: none;
+    font-size: 16.5px;
+    color: #fff;
+    font-weight: 600;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.btns button.faleconosco:hover {
+    box-shadow: 0 0 6px #049D46;
+    transform: scale(1.02);
+    color: #fff;
+}
+
+/*ESTILO DO CABEÇALHO*/
+
+/* ESTILO DAS MATÉRIAS */
+
+section.materias {
+    padding: 50px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.materias .interface {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+section.materias .interface .titulo {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 100%;
+}
+
+section.materias .interface .titulo h1 {
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: -2px;
+}
+
+section.materias .interface .titulo h1 span {
+    color: #049D46;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cards .line1 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .line2 {
+    display: flex;
+    gap: 15px;
+    align-items: left;
+    justify-content: left;
+}
+
+.cards a img {
+    border-radius: 15px;
+}
+
+/* ESTILO DAS MATÉRIAS */
+
+/*ESTILO DO FOOTER*/
+
+footer {
+    padding: 40px 10%;
+    background-color: #049D46;
+    box-shadow: 0 2px 10px #000;
+}
+
+footer .interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .interface .cima {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .interface .cima .sociais {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+}
+
+footer .interface .cima .sociais button {
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #e4d000;
+}
+
+footer .interface .cima .sociais button i {
+    font-size: 23px;
+    color: #049D46;
+}
+
+.linha {
+    border: solid 2px #e4d000;
+}
+
+footer .interface .baixo p {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+}
+
+footer .interface .baixo p i {
+    font-size: 20px;
+    color: #e4d000;
+}
+
+footer .interface .baixo p a {
+    color: #e4d000;
+    text-decoration: none;
+}
+
+/*ESTILO DO FOOTER*/
+
+/* ANIMAÇÂO HOVER DISCIPLINAS */
+
+.cards .line1 a img.rel:hover {
+    box-shadow: 0 0 12px red;
+    transform: scale(1.02);
+    transition: ease-in-out 250ms;
+}
+
+.cards .line1 a img.empsus:hover {
+    box-shadow: 0 0 12px rgb(0, 81, 255);
+    transform: scale(1.02);
+    transition: ease-in-out 250ms;
+}
+
+.cards .line1 a img.fin:hover {
+    box-shadow: 0 0 12px purple;
+    transform: scale(1.02);
+    transition: ease-in-out 250ms;
+}
+
+.cards .line2 a img.amb:hover {
+    box-shadow: 0 0 12px gold;
+    transform: scale(1.02);
+    transition: ease-in-out 250ms;
+}
+
+.cards .line2 a img.pol:hover {
+    box-shadow: 0 0 12px rgb(77, 252, 77);
+    transform: scale(1.02);
+    transition: ease-in-out 250ms;
+}
+
+.cards .line2 a img.vest:hover {
+    box-shadow: 0 0 12px #FF66C4;
+    transform: scale(1.02);
+    transition: ease-in-out 250ms;
+    
+}
+
+/* ANIMAÇÂO HOVER DISCIPLINAS */
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 1222px){
+    header nav ul {
+        gap: 15px;
+    }
+
+    section.home .interface .left .btns-home button {
+        margin-bottom: 50px;
+    }
+
+    section.materias {
+    padding: 10px 8% 50px 8%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+@media screen and (max-width: 1020px) {
+    .cards .line1,
+    .cards .line2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cards a img {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    section.materias .interface .titulo h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    section.materias {
+    padding: 10px 8% 50px 8%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .logo img {
+        width: 180px;
+    }
+
+    .cards {
+        gap: 20px;
+    }
+
+    .cards a img {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    footer .interface .cima {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    footer .interface .baixo p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    section.materias {
+    padding: 10px 8% 50px 8%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+}
+
+/*RESPONSIVIDADE*/
+
+/* Botão hambúrguer */
+.menu-mobile-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #049D46;
+}
+
+/* Menu mobile (oculto por padrão) */
+.menu-mobile {
+    display: none;
+    position: absolute;
+    top: 70px; /* altura do header */
+    right: 20px;
+    background-color: #fff;
+    border: 2px solid #049D46;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 2000;
+}
+
+.menu-mobile ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-mobile ul li a {
+    text-decoration: none;
+    color: #049D46;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu-mobile ul li a:hover {
+    color: #000;
+}
+
+/* Mostrar botão hambúrguer no mobile */
+@media screen and (max-width: 1020px) {
+    .menu-desktop, .btns {
+        display: none;
+    }
+    .menu-mobile-btn {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #049D46;
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--FONTE-->
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!--BOOTSTRAP-->
+    <link rel="icon" href="https://i.postimg.cc/1Xh6fG81/Favicon-EC.png">
+    <title>Empreendedorismo Sustentável</title>
+    <link rel="stylesheet" href="aulas-geral.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://i.postimg.cc/gkcyRKMG/Logo-EC-2.png" alt="" width="250px">
+            </a>
+        </div>
+
+        <div class="menu-mobile-btn" onclick="toggleMenu()">
+            <i class="bi bi-list"></i>
+        </div>
+
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#sobre">Sobre nós</a></li>
+                <li><a href="educaceara.html">Educa Ceará</a></li>
+                <li><a href="bot.html">ChatBot Ciro</a></li>
+            </ul>
+        </nav>
+
+        <div class="btns">
+            <button class="faleconosco">
+                <a href="index.html#suporte">Fale Conosco</a>
+            </button>
+        </div>
+
+        <!-- Menu mobile -->
+        <nav class="menu-mobile" id="menu-mobile">
+            <ul>
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#sobre">Sobre nós</a></li>
+                <li><a href="educaceara.html">Educa Ceará</a></li>
+                <li><a href="bot.html">ChatBot Ciro</a></li>
+                <li><a href="index.html#suporte">Fale Conosco</a><li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="interface">
+        <div class="header">
+            <div class="voltar">
+                <a href="educaceara.html">
+                    <i class="bi bi-arrow-left-circle-fill"></i>
+                </a>
+            </div>
+
+            <div class="banner">
+                <a href="educaceara.html">
+                    <img src="https://i.postimg.cc/JzVPxFkH/empsus.jpg" alt="" width="1297px">
+                </a>
+            </div>
+        </div>
+
+        <div class="aulas">
+            <div class="card-aulas">
+                <h1 class="titulo">Empreendedorismo Sustentável</h1>
+
+                <div class="list">
+                    <a href="https://youtu.be/BrPo3_szBP8" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Desenvolvimento Sustentável</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>12:28</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://youtu.be/7KajNk-3iqc" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Conceitos</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>01:25:15</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                      <a href="https://youtu.be/fsCFrB-9eSc" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Tripé da Sustentabilidade</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>04:04</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://youtu.be/pBzlu0GbrwM" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Agenda 2030 e ODS</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>35:06</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                        
+                    <a href="https://sebraeatende.com.br/e-book/empreendedorismo-e-economia-circular?utm_source=" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p class="listasuspensa">Economia Circular</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-book-half"></i>
+                                    <p>Leitura</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/3_eQ9iqdMDM?si=9BuE1pJVne4Atqsk" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Consumo Consciente</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>04:16</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/evhpZJ7ojMQ" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Responsabilidade Social Corporativa</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>43:33</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://youtu.be/BWnCg_RV-kg?si=6HIF1qFurlZJJf9z" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Tecnologia Limpa</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>21:27</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://sebrae.com.br/sites/PortalSebrae/artigos/saiba-o-que-sao-startups-sustentaveis-greentechs-e-cleantechs,df468e029bf28810VgnVCM1000001b00320aRCRD" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Startup Sustentável</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-book-half"></i>
+                                    <p>Leitura</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://sebrae.com.br/Sebrae/Portal%20Sebrae/UFs/PE/Anexos/Guia%20completo%20para%20implementar%20pr%C3%A1ticas%20de%20ESG%20na%20sua%20empresa.pdf?utm_source=chatgpt.com" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>ESG</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-book-half"></i>
+                                    <p>Leitura</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://youtu.be/drFcJZDYsto?si=KPMsdq2yVkFqgOya" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Lesgilação Ambiental</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>31:43</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://fliphtml5.com/wdlhj/fpbj/Guia_Empreendedorismo_Jovem_Sustent%C3%A1vel_%28N%C3%ADvel_iniciante%29/?utm_source=" target="_blank">
+                        <div class="line">
+                            <div class="left">
+                                <i class="bi bi-circle-fill"></i>
+                                <p>Empreendedorismo Sustentável</p>
+                            </div>
+
+                            <div class="rigth">
+                                <div class="tempo">
+                                    <i class="bi bi-clock-fill"></i>
+                                    <p>21:27</p>
+                                </div>
+
+                                <i id="seta" class="bi bi-arrow-right-circle"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="avatar">
+                <img src="https://i.postimg.cc/k5mjqK2B/Avatar-Emp-Sus.png" alt="" width="500px" ali>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="interface-foot">
+            <div class="cima">
+                <a href="#home">
+                    <img src="https://i.postimg.cc/zvmxwC1z/Logo-Footer.png" alt="" width="200px">
+                </a>
+
+                <div class="sociais">
+                    <button>
+                        <a href="https://wa.me/5588997830094?text=Vim%20pelo%20EducaCear%C3%A1">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </button>
+
+                    <button>
+                        <a href="https://www.instagram.com/educaceara2025/?utm_source=ig_web_button_share_sheet">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="linha"></div>
+            <div class="baixo">
+                <p>
+                    <i class="bi bi-envelope-fill"></i> <a href="mailto:luis.felipecosta12061984@gmail.com">luis.felipecosta12061984@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

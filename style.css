@@ -1,0 +1,644 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", arial;
+}
+
+html{
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #f5fefd;
+    padding-top: 100px; 
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/*ESTILO DO CABEÇALHO*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    background-color: #F0F8F5;
+    position: fixed;   /* fixa no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;     /* fica acima do conteúdo */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* sombra */
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 450;
+    font-size: 17px;
+    position: relative;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #049D46;
+    color: #049D46;
+    border-radius: 0px;
+    padding: 1px 10px;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btns button {
+    padding: 10px 30px;
+    background-color: transparent;
+    outline: none;
+}
+
+.btns button.faleconosco {
+    background-color: #049D46;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.btns button.faleconosco a {
+    display: flex;
+    text-decoration: none;
+    font-size: 16.5px;
+    color: #fff;
+    font-weight: 600;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.btns button.faleconosco:hover {
+    box-shadow: 0 0 6px #049D46;
+    transform: scale(1.02);
+    color: #fff;
+}
+
+/*ESTILO DO CABEÇALHO*/
+
+/*ESTILO DO HOME*/
+
+section.home {
+    padding: 0px 10%;
+    padding-top: 50px;
+}
+
+section.home .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+section.home .interface .left {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    gap: 20px;
+}
+
+section.home .interface .left h1 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 53px;
+    
+}
+
+section.home .interface .left h1 span {
+    color: #049D46;
+}
+
+section.home .interface .left h1 span.point {
+    color:#e4d000;
+}
+
+section.home .interface .left p {
+    font-size: 18px;
+}
+
+section.home .interface .left .btns-home {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+section.home .interface .left .btns-home button {
+    padding: 8px 20px;
+    background-color: transparent;
+    border: none;
+}
+
+section.home .interface .left .btns-home button.sbm-home {
+    background-color: #049D46;
+    border: 2px solid #049D46;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+section.home .interface .left .btns-home button.sbm-home a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+section.home .interface .left .btns-home button.sbm-home:hover {
+    background-color: #fff;
+    box-shadow: 0 0 10px #049D46;
+}
+
+section.home .interface .left .btns-home button.sbm-home:hover a {
+    color: #049D46;
+}
+
+/*ESTILO DO HOME*/
+
+/*ESTILO DO SOBRE*/
+
+section.sobre {
+    padding: 80px 10%;
+    background-color:aliceblue;
+}
+
+section.sobre .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+section.sobre .interface .rigth .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+section.sobre .interface .rigth .titulo h1 {
+    font-size: 38px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+section.sobre .interface .rigth .titulo h1 span {
+    color: #049D46;
+}
+
+section.sobre .interface .rigth p {
+    font-size: 18px;
+    text-align: left;
+    margin: 20px 0px;
+}
+
+section.sobre .interface .rigth .sociais {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+}
+
+section.sobre .interface .rigth .sociais button {
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #049D46;
+}
+
+section.sobre .interface .rigth .sociais button i {
+    font-size: 23px;
+    color: #fff;
+}
+
+/*ESTILO DO SOBRE*/
+
+/*ESTILO DO SUPORTE*/
+
+section.suporte {
+    padding: 0px 10%;
+    padding-bottom: 100px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+section.suporte h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+section.suporte h1 span {
+    color: #049D46;
+}
+
+section.suporte .interface form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section.suporte .interface form input, form textarea {
+    width: 100%;
+    background-color: #ebebeb;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #000;
+    font-size: 18px;
+}
+
+section.suporte .interface form textarea {
+    resize: none;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+section.suporte .interface form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+section.suporte .interface form .btn-enviar input {
+    width: 240px;
+    padding: 10px 20px;
+    background-color: #049D46;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+    font-size: 17px;
+    
+}
+
+section.suporte .interface form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #049D46;
+    transform: scale(1.05);
+}
+
+/*ESTILO DO SUPORTE*/
+
+/*ESTILO DO FOOTER*/
+
+footer {
+    padding: 40px 10%;
+    background-color: #049D46;
+    box-shadow: 0 2px 10px #000;
+}
+
+footer .interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .interface .cima {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .interface .cima .sociais {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+}
+
+footer .interface .cima .sociais button {
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #e4d000;
+}
+
+footer .interface .cima .sociais button i {
+    font-size: 23px;
+    color: #049D46;
+}
+
+.linha {
+    border: solid 2px #e4d000;
+}
+
+footer .interface .baixo p {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    gap: 10px;
+}
+
+footer .interface .baixo p i {
+    font-size: 20px;
+    color: #e4d000;
+}
+
+footer .interface .baixo p a {
+    color: #e4d000;
+    text-decoration: none;
+}
+
+/*ESTILO DO FOOTER*/
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 1222px){
+    header nav ul {
+        gap: 15px;
+    }
+
+    section.home .interface .left .btns-home button {
+        margin-bottom: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1020px){
+    
+    /* CABEÇALHO */
+    .menu-desktop, .btns{
+        display: none;
+    }
+
+    header .logo img {
+        width: 200px;
+    }
+
+    /* Home */
+    section.home .interface {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: left;
+    }
+
+    section.home .interface .left, 
+    section.home .interface .rigth {
+        width: 100%;
+        align-items: center;
+    }
+
+    section.home .interface .left h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    img#avatar-home {
+        margin-left: 10%;
+    }
+
+    /* Sobre */
+    section.sobre .interface {
+        flex-direction: column-reverse;
+        gap: 2rem;
+        text-align: left;
+    }
+
+    section.sobre .interface .rigth, 
+    section.sobre .interface .left {
+        width: 100%;
+        align-items: left;
+    }
+
+    section.sobre .interface .rigth p {
+        text-align: left;
+    }
+
+    .avatar-sobre {
+        margin-left: 19%;
+    }
+
+    /* Suporte */
+    section.suporte {
+        padding: 0 5%;
+    }
+
+    section.suporte .interface form {
+        width: 100%;
+        padding: 5%;
+    }
+
+    /* Header */
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    /* Footer */
+    footer .interface .cima {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+
+    }
+
+    footer .interface .baixo p {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: 0.3s ease;
+
+    z-index: 9999;
+}
+
+.popup-overlay.ativo {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup {
+    position: relative;
+    width: min(90%, 420px);
+
+    background: #F4E9E5;
+    padding: 40px 30px;
+
+    border-radius: 20px;
+    text-align: center;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
+
+.popup-overlay.ativo .popup {
+    transform: scale(1);
+}
+
+.popup-icone {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #C9796A;
+    color: white;
+
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.popup h2 {
+    color: #8B6D6B;
+    margin-bottom: 10px;
+}
+
+.popup p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.popup-botao {
+    margin-top: 20px;
+
+    padding: 12px 28px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #C9796A;
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.popup-fechar {
+    position: absolute;
+
+    top: 12px;
+    right: 15px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 28px;
+    color: #8B6D6B;
+
+    cursor: pointer;
+}
+/*RESPONSIVIDADE*/
+
+/* Botão hambúrguer */
+.menu-mobile-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #049D46;
+}
+
+/* Menu mobile (oculto por padrão) */
+.menu-mobile {
+    display: none;
+    position: absolute;
+    top: 70px; /* altura do header */
+    right: 20px;
+    background-color: #fff;
+    border: 2px solid #049D46;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    z-index: 2000;
+}
+
+.menu-mobile ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-mobile ul li a {
+    text-decoration: none;
+    color: #049D46;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu-mobile ul li a:hover {
+    color: #000;
+}
+
+/* Mostrar botão hambúrguer no mobile */
+@media screen and (max-width: 1020px) {
+    .menu-desktop, .btns {
+        display: none;
+    }
+    .menu-mobile-btn {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        color: #049D46;
+        margin-left: auto;
+    }
+}
